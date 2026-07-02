@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Navbar() {
@@ -9,7 +10,7 @@ function Navbar() {
 		},
 		{
 			name: "Home",
-			route: "/Homet",
+			route: "/page",
 			id: 2,
 		},
 		{
@@ -20,9 +21,17 @@ function Navbar() {
 	];
 
 	return (
-		<div>
-			<h1>SH project</h1>
-			<div>{buttons.map(())}</div>
+		<div className="h-fit w-full bg-red-950 text-yellow-200 flex justify-between p-3">
+			<h1 className="text-2xl font-bold">SH project</h1>
+			<div className="flex gap-4 text-xl">
+				{buttons.map((btn) => {
+					return (
+						<a key={btn.id} className="hover:text-white" href={btn.route}>
+							{btn.name}
+						</a>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
