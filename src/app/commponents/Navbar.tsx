@@ -10,18 +10,18 @@ function Navbar() {
 		},
 		{
 			name: "Home",
-			route: "/page",
+			route: "/",
 			id: 2,
 		},
 		{
 			name: "Contact",
-			route: "/contact",
+			route: "/Contact",
 			id: 3,
 		},
 	];
 
 	return (
-		<div className="h-fit w-full bg-red-950 text-yellow-200 flex justify-between p-3">
+		<div className="h-fit w-full bg-gray-50/10 fixed text-yellow-200 flex justify-between p-4 border-b">
 			<h1 className="text-2xl font-bold">SH project</h1>
 			<div className="flex gap-4 text-xl">
 				{buttons.map((btn) => {
