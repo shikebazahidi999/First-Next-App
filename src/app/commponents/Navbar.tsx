@@ -18,6 +18,11 @@ function Navbar() {
 			route: "/Contact",
 			id: 3,
 		},
+		{
+			name: "Workers",
+			route: "/products",
+			id: 4,
+		},
 	];
 
 	return (
