@@ -10,7 +10,7 @@ function Products() {
 			>
 				All of our workers
 			</h1>
-			<img src="./images/picture1.jpg" alt="" />
+
 			<div className="grid grid-cols-4 gap-8">
 				{employs.map((items) => {
 					return (

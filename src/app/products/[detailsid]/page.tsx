@@ -1,11 +1,16 @@
 import React from "react";
 import { employs } from "../../../../public/images/informations/employs";
+import { notFound } from "next/navigation";
+import Link from "next/link";
 
 async function Details({ params }: { params: Promise<{ detailsId: number }> }) {
 	const proid = (await params).detailsId;
 	const deatilsofemploy = employs.find((x) => {
 		return x.id == proid;
 	});
+	// if (!deatilsofemploy) {
+	// 	return notFound();
+	// }
 	return (
 		<div className="w-full h-full bg-linear-60 from-black via-gray-950 to-black  text-yellow-200">
 			<div className="bg-yellow-200/20 w-full h-60 flex justify-between ">
@@ -18,6 +23,7 @@ async function Details({ params }: { params: Promise<{ detailsId: number }> }) {
 					{deatilsofemploy?.name}
 				</h1>
 			</div>
+
 			<div className="w-full flex flex-col gap-6 mt-5 items-baseline-last p-3 border border-yellow-200 ">
 				<h1 className="text-2xl font-bold flex">
 					Name : <span>{deatilsofemploy?.name}</span>
@@ -29,17 +35,20 @@ async function Details({ params }: { params: Promise<{ detailsId: number }> }) {
 					family name : <span>{deatilsofemploy?.LastName}</span>
 				</h1>
 				<h1 className="text-2xl font-bold  flex">
-					{" "}
 					Age : <span>{deatilsofemploy?.age}</span>
 				</h1>
 				<h1 className="text-2xl font-bold  flex">
 					Email : <span> {deatilsofemploy?.email}</span>
 				</h1>
 				<h1 className="text-2xl font-bold  flex">
-					{" "}
 					Id Number : <span>{deatilsofemploy?.id}</span>
 				</h1>
 			</div>
+			<a
+				href={`/products/${deatilsofemploy?.id}/reviewed/${deatilsofemploy?.id}`}
+			>
+				reviews
+			</a>
 			<div className="w-full flex flex-col items-center">
 				<h1 className="text-4xl font-bold ">Extra Informations</h1>
 				<p className="text-xl p-5">
