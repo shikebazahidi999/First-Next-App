@@ -1,5 +1,10 @@
 import React from "react";
 import { employs } from "../../../public/images/informations/employs";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+	title: "Workers",
+	description: "contact page ",
+};
 
 function Products() {
 	return (

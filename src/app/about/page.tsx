@@ -1,5 +1,9 @@
+import { Metadata } from "next";
 import React from "react";
-
+export const metadata: Metadata = {
+	title: "About",
+	description: "about page",
+};
 function page() {
 	return (
 		<div className=" bg-linear-60 from-black via-gray-950 to-black min-h-screen w-full flex justify-center items-center">

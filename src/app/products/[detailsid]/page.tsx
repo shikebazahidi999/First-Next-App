@@ -2,6 +2,12 @@ import React from "react";
 import { employs } from "../../../../public/images/informations/employs";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "details",
+	description: "details page",
+};
 
 async function Details({ params }: { params: Promise<{ detailsId: number }> }) {
 	const proid = (await params).detailsId;
