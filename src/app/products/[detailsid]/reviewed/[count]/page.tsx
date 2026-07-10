@@ -13,7 +13,7 @@ async function Count({
 		<div className="flex items-center justify-center bg-linear-60 from-black via-gray-950 to-black min-h-screen w-full">
 			<div className="h-fit w-fit text-yellow-200 border p-5 rounded-2xl">
 				Welcome dear to the reviwed page you have reviwed information
-				{detailsid} about three times you ha
+				{detailsid} about three times you have added so here you can see all the
 			</div>
 		</div>
 	);
