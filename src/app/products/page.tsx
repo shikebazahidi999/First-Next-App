@@ -15,7 +15,8 @@ function Products() {
 			>
 				All of our workers
 			</h1>
-
+			من خیلی دوست دارم بدونم که چرا مردم انیقدر میخوان برای خودشون دردسر درست
+			کنن واقعا خیلی برام عجیبه که چرا مردم نمیخوان با استراحت کردن خودشونو
 			<div className="grid grid-cols-4 gap-8">
 				{employs.map((items) => {
 					return (
