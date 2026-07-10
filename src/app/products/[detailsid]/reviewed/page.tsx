@@ -1,7 +1,7 @@
 import React from "react";
 
 function Reviwed() {
-	return <div>Reviwed</div>;
+	return <div>Reviwed page</div>;
 }
 
 export default Reviwed;
