@@ -14,7 +14,9 @@ async function Count({
 			<div className="h-fit w-fit text-yellow-200 border p-5 rounded-2xl">
 				Welcome dear to the reviwed page you have reviwed information
 				{detailsid} about three times you have added so here you can see all the
-				make sure you are
+				make sure you are seeing the page that we are sugusting for you so try
+				to make this chabce better and smarter so try the best for yourself so
+				how can get mor iformation
 			</div>
 		</div>
 	);
