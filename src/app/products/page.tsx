@@ -39,7 +39,8 @@ function Products() {
 								{" "}
 								<button className="w-full bg-gray-200/10 p-2 rounded-md border  hover:shadow-md hover:shadow-yellow-200">
 									{" "}
-									See More Informations in this case
+									See More Informations in this case maybe that will be
+									something special that you want
 								</button>
 							</a>
 						</div>
