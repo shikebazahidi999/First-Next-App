@@ -1,4 +1,4 @@
-string greet(){
+string greet(name){
     return "hello";
 };
 
